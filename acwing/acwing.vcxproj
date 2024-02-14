@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5470b647-d88b-480c-8883-dcdc0b860204}</ProjectGuid>
+    <RootNamespace>acwing</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>acwing算法课</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Bellman-Ford.cpp" />
+    <ClCompile Include="Floyd算法求最短路.cpp" />
+    <ClCompile Include="KMP算法.cpp" />
+    <ClCompile Include="Kruskal算法.cpp" />
+    <ClCompile Include="Nim游戏.cpp" />
+    <ClCompile Include="n皇后%28DFS%29.cpp" />
+    <ClCompile Include="二维01背包.cpp" />
+    <ClCompile Include="区间分组.cpp" />
+    <ClCompile Include="区间覆盖.cpp" />
+    <ClCompile Include="区间选点.cpp" />
+    <ClCompile Include="分组背包.cpp" />
+    <ClCompile Include="分解质因数.cpp" />
+    <ClCompile Include="匈牙利算法.cpp" />
+    <ClCompile Include="友好城市.cpp" />
+    <ClCompile Include="台阶-Nim游戏.cpp" />
+    <ClCompile Include="合唱队形.cpp" />
+    <ClCompile Include="合并果子.cpp" />
+    <ClCompile Include="增减序列.cpp" />
+    <ClCompile Include="多重背包.cpp" />
+    <ClCompile Include="多重背包的滑动窗口优化.cpp" />
+    <ClCompile Include="快速幂.cpp" />
+    <ClCompile Include="快速幂求逆元.cpp" />
+    <ClCompile Include="怪盗基德的滑翔翼.cpp" />
+    <ClCompile Include="我在哪.cpp" />
+    <ClCompile Include="截断数组.cpp" />
+    <ClCompile Include="拦截导弹.cpp" />
+    <ClCompile Include="排队打水.cpp" />
+    <ClCompile Include="摘花生.cpp" />
+    <ClCompile Include="改变数组元素.cpp" />
+    <ClCompile Include="数字三角形.cpp" />
+    <ClCompile Include="整数划分.cpp" />
+    <ClCompile Include="整数划分2.cpp" />
+    <ClCompile Include="方格取数.cpp" />
+    <ClCompile Include="最低通行费.cpp" />
+    <ClCompile Include="最大不相交区间数量.cpp" />
+    <ClCompile Include="最大公约数.cpp" />
+    <ClCompile Include="最短Hamilton路径.cpp" />
+    <ClCompile Include="最短编辑距离.cpp" />
+    <ClCompile Include="最长上升子序列 .cpp" />
+    <ClCompile Include="最长上升子序列2.cpp" />
+    <ClCompile Include="最长上升子序列和.cpp" />
+    <ClCompile Include="最长公共子序列.cpp" />
+    <ClCompile Include="朴素Prim算法.cpp" />
+    <ClCompile Include="SPFA求是否存在负环.cpp" />
+    <ClCompile Include="SPFA求最短路.cpp" />
+    <ClCompile Include="trie字典树.cpp" />
+    <ClCompile Include="八数码%28BFS%29.cpp" />
+    <ClCompile Include="区间合并.cpp" />
+    <ClCompile Include="区间和.cpp" />
+    <ClCompile Include="单链表.cpp" />
+    <ClCompile Include="双链表.cpp" />
+    <ClCompile Include="单调栈.cpp" />
+    <ClCompile Include="堆排序.cpp" />
+    <ClCompile Include="字符串哈希.cpp" />
+    <ClCompile Include="并查集.cpp" />
+    <ClCompile Include="最大异或对.cpp" />
+    <ClCompile Include="有向图的拓扑序列.cpp" />
+    <ClCompile Include="朴素Dijkstra%28稠密图%29.cpp" />
+    <ClCompile Include="堆优化Dijkstra%28稀疏图%29.cpp" />
+    <ClCompile Include="染色法.cpp" />
+    <ClCompile Include="模拟堆.cpp" />
+    <ClCompile Include="模拟散列表%28拉链法%29.cpp" />
+    <ClCompile Include="模拟队列.cpp" />
+    <ClCompile Include="模拟栈.cpp" />
+    <ClCompile Include="扩展欧几里得算法.cpp" />
+    <ClCompile Include="01背包.cpp" />
+    <ClCompile Include="完全背包.cpp" />
+    <ClCompile Include="求组合数1.cpp" />
+    <ClCompile Include="求组合数2.cpp" />
+    <ClCompile Include="求组合数3.cpp" />
+    <ClCompile Include="求组合数4.cpp" />
+    <ClCompile Include="没有上司的舞会.cpp" />
+    <ClCompile Include="滑雪.cpp" />
+    <ClCompile Include="满足条件的01序列.cpp" />
+    <ClCompile Include="登山.cpp" />
+    <ClCompile Include="石子合并.cpp" />
+    <ClCompile Include="砖块.cpp" />
+    <ClCompile Include="筛法求1到N.cpp" />
+    <ClCompile Include="求二进制下1的个数.cpp" />
+    <ClCompile Include="Template.cpp" />
+    <ClCompile Include="二分找数的左右边界.cpp" />
+    <ClCompile Include="二维矩阵最大值.cpp" />
+    <ClCompile Include="低精度除法.cpp" />
+    <ClCompile Include="划分单词.cpp" />
+    <ClCompile Include="前缀和.cpp" />
+    <ClCompile Include="取二进制下第k位.cpp" />
+    <ClCompile Include="差分.cpp" />
+    <ClCompile Include="差分矩阵.cpp" />
+    <ClCompile Include="归并模板.cpp" />
+    <ClCompile Include="快排模板.cpp" />
+    <ClCompile Include="数组元素的目标和.cpp" />
+    <ClCompile Include="最长不重复子串长度.cpp" />
+    <ClCompile Include="求数的立方根.cpp" />
+    <ClCompile Include="求第k小的数.cpp" />
+    <ClCompile Include="求解逆序对数量.cpp" />
+    <ClCompile Include="模拟散列表%28开放寻址法%29.cpp" />
+    <ClCompile Include="全排列%28DFS%29.cpp" />
+    <ClCompile Include="树的重心.cpp" />
+    <ClCompile Include="图中点的层次.cpp" />
+    <ClCompile Include="分类.cpp" />
+    <ClCompile Include="test.cpp" />
+    <ClCompile Include="公式法求N.cpp" />
+    <ClCompile Include="约数之和.cpp" />
+    <ClCompile Include="约数个数.cpp" />
+    <ClCompile Include="线性同余方程.cpp" />
+    <ClCompile Include="能被整除的数.cpp" />
+    <ClCompile Include="蒙德里安的梦想.cpp" />
+    <ClCompile Include="装箱问题.cpp" />
+    <ClCompile Include="计数问题.cpp" />
+    <ClCompile Include="试除法求约数.cpp" />
+    <ClCompile Include="质数的判定.cpp" />
+    <ClCompile Include="埃式筛.cpp" />
+    <ClCompile Include="线性筛.cpp" />
+    <ClCompile Include="走迷宫%28BFS%29.cpp" />
+    <ClCompile Include="滑动窗口.cpp" />
+    <ClCompile Include="连通块中点的数量.cpp" />
+    <ClCompile Include="采药.cpp" />
+    <ClCompile Include="食物链.cpp" />
+    <ClCompile Include="高精度乘法.cpp" />
+    <ClCompile Include="高精度减法.cpp" />
+    <ClCompile Include="高精度加法.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
